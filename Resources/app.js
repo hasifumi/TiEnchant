@@ -6,7 +6,7 @@ win.backgroundColor = 'blue';
 
 webView = Ti.UI.createWebView();
 
-webView.url = './enchant/index.html';
+webView.url = './enchant/index2.html';
 
 win.add(webView);
 

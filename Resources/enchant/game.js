@@ -5,7 +5,7 @@ window.onload = function() {
 
   game.onload = function() {
     var scene = game.rootScene;
-    scene.backgroundColor = 'red'
+    scene.backgroundColor = 'pink'
   };
 
   game.start();

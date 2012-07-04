@@ -5,12 +5,13 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.020000 seconds on emulator to get ready
+[DEBUG] waited 0.019000 seconds on emulator to get ready
 [DEBUG] com.hahahassy.tienchant installed? True
-[INFO] Fastdev server running, deploying in Fastdev mode
+[WARN] Fastdev enabled, but server isn't running, deploying normally
 [INFO] Copying project resources..
-[TRACE] COPYING CREATED FILE: C:\Users\fumio\MyProject\TiEnchant\Resources\enchant\.game.js.swp => C:\Users\fumio\MyProject\TiEnchant\build\android\bin\assets\Resources\enchant\.game.js.swp
-[TRACE] COPYING MODIFIED FILE: C:\Users\fumio\MyProject\TiEnchant\Resources\enchant\game.js => C:\Users\fumio\MyProject\TiEnchant\build\android\bin\assets\Resources\enchant\game.js
+[TRACE] COPYING MODIFIED FILE: C:\Users\fumio\MyProject\TiEnchant\Resources\app.js => C:\Users\fumio\MyProject\TiEnchant\build\android\bin\assets\Resources\app.js
+[TRACE] COPYING CREATED FILE: C:\Users\fumio\MyProject\TiEnchant\Resources\enchant\.game2.js.swp => C:\Users\fumio\MyProject\TiEnchant\build\android\bin\assets\Resources\enchant\.game2.js.swp
+[TRACE] COPYING MODIFIED FILE: C:\Users\fumio\MyProject\TiEnchant\Resources\enchant\index2.html => C:\Users\fumio\MyProject\TiEnchant\build\android\bin\assets\Resources\enchant\index2.html
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: C:\Users\fumio\MyProject\TiEnchant\build\android\bin\assets\Resources\appicon.png
@@ -46,11 +47,17 @@ Logfile initialized
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: C:\Users\fumio\MyProject\TiEnchant\build\android\bin\app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/enchant/apad.png
+[DEBUG] from resource zip => assets/Resources/enchant/chara0.gif
 [DEBUG] from resource zip => assets/Resources/enchant/chara1.png
 [DEBUG] from resource zip => assets/Resources/enchant/enchant.js
 [DEBUG] from resource zip => assets/Resources/enchant/game.js
+[DEBUG] from resource zip => assets/Resources/enchant/game2.js
 [DEBUG] from resource zip => assets/Resources/enchant/index.html
+[DEBUG] from resource zip => assets/Resources/enchant/index2.html
 [DEBUG] from resource zip => assets/Resources/enchant/main.js
+[DEBUG] from resource zip => assets/Resources/enchant/map1.gif
+[DEBUG] from resource zip => assets/Resources/enchant/pad.png
 [DEBUG] from resource zip => assets/Resources/enchant/ui.enchant.js
 [DEBUG] from resource zip => assets/Resources/KS_nav_ui.png
 [DEBUG] from resource zip => assets/Resources/KS_nav_views.png
@@ -62,18 +69,9 @@ Logfile initialized
 [DEBUG] from resource zip => assets/tiapp.xml
 [DEBUG] from resource zip => res/drawable/appicon.png
 [DEBUG] from resource zip => res/drawable/background.png
-[DEBUG] from resource zip => res/drawable/close.png
-[DEBUG] from resource zip => res/drawable/facebook_login.png
-[DEBUG] from resource zip => res/drawable/facebook_login_down.png
-[DEBUG] from resource zip => res/drawable/facebook_login_wide.png
-[DEBUG] from resource zip => res/drawable/facebook_login_wide_down.png
-[DEBUG] from resource zip => res/drawable/facebook_logout.png
-[DEBUG] from resource zip => res/drawable/facebook_logout_down.png
 [DEBUG] from resource zip => res/layout/titanium_tabgroup.xml
 [DEBUG] from resource zip => AndroidManifest.xml
 [DEBUG] from resource zip => resources.arsc
-[DEBUG] from resource zip => res/drawable-hdpi/close.png
-[DEBUG] from resource zip => res/drawable-ldpi/close.png
 [DEBUG] from resource zip => res/drawable-long-land-hdpi/background.png
 [DEBUG] from resource zip => res/drawable-long-land-ldpi/background.png
 [DEBUG] from resource zip => res/drawable-long-port-hdpi/background.png
@@ -87,10 +85,6 @@ Logfile initialized
 [DEBUG] from JAR c:\Users\fumio\AppData\Roaming\Titanium\mobilesdk\win32\1.8.1\Android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
 [DEBUG] from JAR c:\Users\fumio\AppData\Roaming\Titanium\mobilesdk\win32\1.8.1\Android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
 [DEBUG] from JAR c:\Users\fumio\AppData\Roaming\Titanium\mobilesdk\win32\1.8.1\Android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
-[DEBUG] from JAR c:\Users\fumio\AppData\Roaming\Titanium\mobilesdk\win32\1.8.1\Android\modules\titanium-facebook.jar => ti/modules/titanium/facebook/LICENSE
-[DEBUG] from JAR c:\Users\fumio\AppData\Roaming\Titanium\mobilesdk\win32\1.8.1\Android\thirdparty.jar => org/apache/Commons-NOTICE.txt
-[DEBUG] from JAR c:\Users\fumio\AppData\Roaming\Titanium\mobilesdk\win32\1.8.1\Android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
-[DEBUG] from JAR c:\Users\fumio\AppData\Roaming\Titanium\mobilesdk\win32\1.8.1\Android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
 [DEBUG] from JAR c:\Users\fumio\AppData\Roaming\Titanium\mobilesdk\win32\1.8.1\Android\titanium.jar => org/appcelerator/titanium/build.properties
 [DEBUG] from JAR c:\Users\fumio\AppData\Roaming\Titanium\mobilesdk\win32\1.8.1\Android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
 [DEBUG] from JAR c:\Users\fumio\AppData\Roaming\Titanium\mobilesdk\win32\1.8.1\Android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
@@ -107,7 +101,7 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.021000 seconds on emulator to get ready
+[DEBUG] waited 0.020000 seconds on emulator to get ready
 [INFO] Installing application on emulator
 [INFO] Launching application ... TiEnchant
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hahahassy.tienchant/.TienchantActivity }
